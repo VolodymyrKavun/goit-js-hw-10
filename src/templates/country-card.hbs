@@ -1,8 +1,8 @@
 {{#each this}}
-  <div class='card-img-top'>
-    <img src='{{flags.svg}}' alt='{{name}}' width='50px' height='50px' />
+  <div class='card-picture-title'>
+    <img class='card-img' src='{{flags.svg}}' alt='{{name}}' width='50px' height='50px' />
+    <h1 class='card-title'>{{name}}</h1>
   </div>
-  <h1 class='card-title'>{{name}}</h1>
   <p class='card-text'><b class='card-text__info'>Capital:</b> {{capital}}</p>
   <p class='card-text'><b class='card-text__info'>Population:</b> {{population}}</p>
   <p class='card-text'><b class='card-text__info'>Languages:</b>{{#each this.languages}}
